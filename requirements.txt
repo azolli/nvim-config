@@ -1,0 +1,14 @@
+Requirements for using these configs
+
+- Install Flutter/Dart to use Dart's LSP
+brew install lua-language-server
+- Typescript LSP
+npm i -g typescript-language-server
+- Python LSP
+npm i -g pyright
+- Rust LSP
+rustup component add rust-analyzer
+- C/C++ LSP
+Install clang and make sure clangd is available
+- Prettier for Typescript
+npm i -g prettier
