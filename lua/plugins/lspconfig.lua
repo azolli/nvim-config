@@ -27,7 +27,7 @@ return {
 			-- Setup c support (install clangd first!)
 			require("lspconfig").clangd.setup({})
 			-- Setup typescript support (install ts-language-server first!)
-			require("lspconfig").tsserver.setup({})
+			require("lspconfig").ts_ls.setup({})
 		end,
 	},
 }
