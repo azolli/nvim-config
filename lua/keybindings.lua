@@ -26,3 +26,6 @@ vim.keymap.set("n", "<leader>sh", ":split<CR>", { desc = "Horizontal split" })
 
 -- Undo with <leader>z
 vim.keymap.set("n", "<leader>z", "u", { desc = "Undo" })
+
+-- Exit terminal mode with <Esc>
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
