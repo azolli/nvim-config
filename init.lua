@@ -10,5 +10,15 @@ vim.o.smartindent = true
 -- Use system clipboard
 vim.opt.clipboard = "unnamedplus"
 
+-- Set font
+-- Note: Font settings are usually handled by the terminal emulator, not Neovim itself.
+vim.o.guifont = "FiraMono Nerd Font:h14"
+
+-- Disable empty lines indicators
+vim.o.fillchars = "eob: "
+
+-- Split to right by default
+vim.opt.splitright = true
+
 require("keybindings")
 require("config.lazy")

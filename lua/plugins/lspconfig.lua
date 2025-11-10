@@ -28,6 +28,10 @@ return {
 			require("lspconfig").clangd.setup({})
 			-- Setup typescript support (install ts-language-server first!)
 			require("lspconfig").ts_ls.setup({})
+            -- Setup dart support 
+            require("lspconfig").dartls.setup({})
+            -- Setup rust support (install rust-analyzer first!)
+            require("lspconfig").rust_analyzer.setup({})
 		end,
 	},
 }
