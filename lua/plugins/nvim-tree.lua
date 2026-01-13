@@ -25,7 +25,9 @@ return {
 	  },
 	  filters = {
 	    dotfiles = false,
-	  },
+        git_clean = false,
+        no_buffer = false,
+      },
     }
   end,
 }
