@@ -20,5 +20,11 @@ vim.o.fillchars = "eob: "
 -- Split to right by default
 vim.opt.splitright = true
 
+-- Enable relative line numbers
+vim.wo.relativenumber = true
+
+-- Enable current line highlighting
+vim.wo.cursorline = true
+
 require("keybindings")
 require("config.lazy")
