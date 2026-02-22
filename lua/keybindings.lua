@@ -42,9 +42,13 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 -- Toggle Copilot Chat with <leader>cc
 vim.keymap.set("n", "<leader>cc", ":CopilotChatToggle<CR>", { desc = "Toggle Copilot Chat" })
 
--- Toggle Copilot Completions with <leader>co
+-- Toggle Copilot Completions with <leader>ce
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>", { desc = "Toggle Copilot Completions" })
 
--- Toggle Copilot Completions with <leader>co
+-- Toggle Copilot Completions with <leader>cd
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>", { desc = "Toggle Copilot Completions" })
+
+
+vim.api.nvim_set_keymap('i', '<C-a>', 'copilot#Accept("<CR>")', { expr=true, noremap = true, silent = true })
+vim.g.copilot_no_tab_map = true
 
