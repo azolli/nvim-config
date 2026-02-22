@@ -40,6 +40,11 @@ return {
                 root_dir = require("lspconfig.util").root_pattern("package.json", "tsconfig.json"),
                 single_file_support = false,
             })
+            -- Add Java support (install jdtls first (brew))
+            require("lspconfig").jdtls.setup({
+                cmd = { "jdtls" },
+                root_dir = require("lspconfig.util").root_pattern(".git", "mvnw", "gradlew"),
+            })
 		end,
 	},
 }
